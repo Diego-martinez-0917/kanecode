@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="../styles/login.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</head>
+
+<body>
+    <img class="wave" src="../images/Foto(0).png">
+    <div class="container">
+        <div class="login-content">
+            <h2 class="title">Iniciar sesión</h2>
+            <p class="title">Selecciona como deseas ingresar a la plataforma</p>
+            <div class='content-buttons'>
+                <div class="lg-facebook">
+                    <img src="../images/facebook.svg">
+                </div>
+                <div class="lg-google">
+                    <img src="../images/google.svg">
+                </div>
+                <div class="lg-linkedln">
+                    <img src="../images/linkedin.svg">
+                </div>
+            </div>
+            <form class="form">
+                <label class="email mdc-text-field  mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label" id="my-label-id">Correo electronico</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id">
+                </label>
+                <label class="pass mdc-text-field mdc-text-field--outlined">
+                    <span class="mdc-notched-outline">
+                        <span class="mdc-notched-outline__leading"></span>
+                        <span class="mdc-notched-outline__notch">
+                            <span class="mdc-floating-label" id="my-label-id">contraseña</span>
+                        </span>
+                        <span class="mdc-notched-outline__trailing"></span>
+                    </span>
+                    <input type="password" class="input-pass mdc-text-field__input" aria-labelledby="my-label-id">
+                    <button class="show" style="background: none;border: none;"><img class=" icon eye-close"
+                            src="../images/Group 5109.svg" /></button>
+                </label>
+                <a class='forgot' href="#">¿Olvidaste tu contraseña?</a>
+                <input type="submit" class="btn-login" value="Iniciar sesión">
+            </form>
+            <p class='regist'>¿Aún no tienes cuenta? <a href="#">Regístrate</a></p>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

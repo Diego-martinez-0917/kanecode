@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "img cont";
+  gap: 3vw;
+  padding-right: 3vw;
+}
+body .wave {
+  grid-area: img;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+}
+body .container {
+  grid-area: cont;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .container .login-content {
+  display: grid;
+  grid-template-rows: repeat(7, min-content);
+  gap: 5vh;
+}
+body .container .login-content .content-buttons {
+  display: inline-flex;
+  gap: 10px;
+}
+body .container .login-content .content-buttons .lg-facebook {
+  width: 127px;
+  height: 43px;
+  border: 1px solid #c8d6e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #3a559f;
+  opacity: 1;
+}
+body .container .login-content .content-buttons .lg-google {
+  width: 127px;
+  height: 43px;
+  border: 1px solid #c8d6e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  opacity: 1;
+}
+body .container .login-content .content-buttons .lg-linkedln {
+  width: 127px;
+  height: 43px;
+  border: 1px solid #c8d6e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: #0077b7;
+  opacity: 1;
+}
+body .container .login-content form {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5vh;
+  margin: 15px auto;
+}
+body .container .login-content form .input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 93% 7%;
+  border-bottom: 2px solid #d9d9d9;
+}
+body .container .login-content form .input-div .div > h5 {
+  transform: translateY(-100%);
+  color: #999;
+  font-size: 1rem;
+  position: absolute;
+  transition: 0.3s;
+  z-index: -1;
+}
+body .container .login-content form .input-div .div > input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: "poppins", sans-serif;
+}
+body .container .login-content form .btn-login {
+  width: 275px;
+  height: 56px;
+  background: #354bd4;
+  text-align: center;
+  font: normal normal bold 14px/20px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+}
+body .container .login-content form .forgot {
+  margin-left: auto;
+}
+body .container .login-content .regist {
+  justify-self: center;
+}
+
+/*# sourceMappingURL=login.css.map */

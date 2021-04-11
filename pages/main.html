@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../images/logo.svg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+</head>
+
+<body>
+
+    <div class=" sidemenu menu-collapsed">
+        <!--header-->
+        <div class='header'>
+            <div class="menu-btn">
+                <img src="../images/Group 5133.svg" />
+            </div>
+            <div class="title">
+                <img class="img-header" src="../images/P.svg" />
+            </div>
+        </div>
+        <!--items-->
+        <div class="menu-items">
+            <div class="item-select">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../images/Group 2974.svg" alt="vista general">
+                    </div>
+                    <div class="title"><samp>Vista General</samp></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../images/contenido2.svg" alt="vista general">
+                    </div>
+                    <div class="title"><samp>Programas y cursos</samp></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../images/design3.svg" alt="vista general">
+                    </div>
+                    <div class="title"><samp>Diseña tu sitio</samp></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../images/database.svg" alt="vista general">
+                    </div>
+                    <div class="title"><samp>Estudiantes / Clientes</samp></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../images/lanzadera.svg" alt="vista general">
+                    </div>
+                    <div class="title"><samp>Marketing y ventas</samp></div>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../images/Group 158.svg" alt="vista general">
+                    </div>
+                    <div class="title"><samp>Analitica y reporte</samp></div>
+                </a>
+            </div>
+            <div class="item item-adjust">
+                <a href="#">
+                    <div class="icon">
+                        <img src="../images/settings-adjust.svg" alt="vista general">
+                    </div>
+                    <div class="title"><samp>Configuracion</samp></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="main-container container-collapsed">
+        <div class="header">
+            <div class="search">
+                <img src="../images/search.svg" alt="search">
+                <input type='text' placeholder="Buscar ..." />
+            </div>
+            <div class="notification">
+                <img src="../images/help.svg">
+                <img src="../images/Component 697 – 2.svg">
+                <img src="../images/Group 5201.svg">
+            </div>
+            <div class="profile">
+                <img src="../images/Ellipse 5.png">
+                <samp>Liliana Mora</samp>
+                <img src="../images/Icon ionic-ios-arrow-down.svg">
+            </div>
+        </div>
+        <div class="body-container">
+            <div class="titles">
+                <div>
+                    <h2>¡Hola Liliana, así van tus programas!</h2>
+                    <h1>Vista general</h1>
+                </div>
+                <div>
+                    <div class="icon">
+                        <img src="../images/Group 3444.svg">
+                        <samp class="number">23</samp><samp class="month">NOV</samp>
+                    </div>
+                    <div class="texts">
+                        <samp class="text-orange-title">Curso de fotografía de alimentos </samp>
+                        <samp class="text-orange-text">Calificar actividad del módulo 2 </samp>
+                    </div>
+                </div>
+            </div>
+
+            <div class="studens">
+                <div class="item curs">
+                    <samp class="numb">08</samp>
+                    <samp class="name">cursos activos</samp>
+                </div>
+                <div class="item oportinities">
+                    <samp class="numb">123</samp>
+                    <samp class="name">Nuevas Oportunidades</samp>
+                </div>
+                <div class="item studens-regis">
+                    <samp class="numb">45</samp>
+                    <samp class="name">Estudiantes registrados</samp>
+                </div>
+                <div class="item sertif">
+                    <samp class="numb">20</samp>
+                    <samp class="name">Certificados entregados</samp>
+                </div>
+                <div class="title">
+                    <samp class="name">Tus Estudiantes</samp>
+                    <img src="../images/Component 53 – 1.png" />
+                </div>
+            </div>
+
+            <div class="grafic-cards">
+                <div class="grafic">
+                    <div class="head">
+                        <h1>Ganancias reportadas:</h1>
+                        <select class="select">
+                            <option value=6>Últimos 6 meses</option>
+                        </select>
+                    </div>
+                    <div class="content">
+                        <div class="profits">
+                            <h1>$ 5863</h1>
+                            <samp>Ganancias totales</samp>
+                        </div>
+                        <div class="grafic-time">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="foot">
+                        <div class="card">
+                            <samp>Octubre</samp>
+                            <h1>$629.75</h1>
+                        </div>
+                        <div class="card">
+                            <samp>Noviembre</samp>
+                            <h1>$629.75</h1>
+                        </div>
+                        <div class="card">
+                            <samp>Diciembre</samp>
+                            <h1>$629.75</h1>
+                        </div>
+                        <div class="card">
+                            <samp>Enero</samp>
+                            <h1>$629.75</h1>
+                        </div>
+                        <div class="card">
+                            <samp>Febrero</samp>
+                            <h1>$629.75</h1>
+                        </div>
+                        <div class="card">
+                            <samp>Marzo</samp>
+                            <h1>$629.75</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img class="icon" src="../images/Image 171.png">
+                        <samp>Tus cursos</samp>
+                    </div>
+                    <div class="card">
+                        <img class="icon" src="../images/Image 153.png">
+                        <samp>Personaliza tus sitios</samp>
+                    </div>
+                    <div class="card">
+                        <img class="icon" src="../images/Image 155.png">
+                        <samp>Crea una campaña</samp>
+                    </div>
+                    <div class="card">
+                        <img class="icon" src="../images/muneca.png">
+                        <samp>Conoce tus clientes</samp>
+                    </div>
+                </div>
+            </div>
+
+            <div class="how-create">
+                <h1>Conoce como crear…</h1>
+                <div class="content">
+                    <img src="../images/Group 3191.png">
+                    <div class="descri">
+                        <h2>Embudos de conversión</h2>
+                        <samp>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            Lorem
+                            ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</samp>
+                        <input type="button" value="Inicia ahora">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["Oct", "Nov", "Dic", "Ene", "Feb", "Mar"],
+                datasets: [
+                    {
+                        backgroundColor: "#7583DE",
+                        data: [60, 21, 46, 36, 44, 38],
+                    },
+                    {
+                        backgroundColor: "#AEDDEB",
+                        data: [40, 15, 39, 29, 38, 50],
+                    },
+                ]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                },
+                datalabels: {
+                    display: false,
+                },
+                scales: {
+
+                    y: {
+                        grid: {
+                            display: false
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

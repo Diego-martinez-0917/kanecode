@@ -1,0 +1,323 @@
+body {
+  margin: 0;
+  margin-left: 40px;
+}
+body .sidemenu {
+  position: fixed;
+  height: 100vh;
+  left: 1vw;
+  top: 5vh;
+}
+body .sidemenu .header {
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+body .sidemenu .header .title {
+  box-sizing: border-box;
+  overflow: hidden;
+  vertical-align: middle;
+}
+body .sidemenu .header .menu-btn {
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 40px;
+}
+body .sidemenu .menu-items {
+  overflow: hidden;
+}
+body .sidemenu .menu-items .item .title,
+body .sidemenu .menu-items .item .icon,
+body .sidemenu .menu-items .item-select .title,
+body .sidemenu .menu-items .item-select .icon {
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+body .sidemenu .menu-items .item .icon,
+body .sidemenu .menu-items .item-select .icon {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 40px;
+}
+body .sidemenu .menu-items .item:hover {
+  background-color: #6d5dd369;
+  border-radius: 12px;
+}
+body .sidemenu .menu-items .item > a {
+  display: block;
+  color: #222f3e;
+  text-decoration: none;
+}
+body .sidemenu .menu-items .item-adjust {
+  margin-top: 30vh;
+}
+body .sidemenu .menu-items .item-select {
+  background-color: #6c5dd3;
+  border-radius: 12px;
+}
+body .sidemenu .menu-items .item-select > a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+body .menu-collapsed {
+  width: 40px;
+  transition: 1s;
+}
+body .menu-collapsed .header {
+  flex-direction: column;
+}
+body .menu-collapsed .menu-items {
+  overflow: hidden;
+}
+body .menu-collapsed .menu-items .item,
+body .menu-collapsed .menu-items .item-select {
+  width: 40px;
+}
+body .menu-collapsed .menu-items .item .title,
+body .menu-collapsed .menu-items .item-select .title {
+  display: none;
+  visibility: hidden;
+  height: 0px;
+}
+body .menu-expanded {
+  width: 250px;
+  transition: 1s;
+}
+body .menu-expanded .menu-items {
+  overflow: hidden;
+}
+body .menu-expanded .menu-items .item,
+body .menu-expanded .menu-items .item-select {
+  width: 250px;
+}
+body .container-expanded {
+  margin-left: 250px;
+  transition: 1s;
+}
+body .container-collapsed {
+  margin-left: 40px;
+  transition: 0.4s;
+}
+body .main-container {
+  background-color: #dddcdc;
+}
+body .main-container .header {
+  display: grid;
+  grid-template-columns: 1fr min-content min-content;
+  gap: 20px;
+  background-color: white;
+  padding: 5px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+body .main-container .header .search,
+body .main-container .header .notification,
+body .main-container .header .profile {
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+body .main-container .header .search > input {
+  width: 100%;
+  height: 30px;
+  border: none;
+}
+body .main-container .header .profile {
+  width: min-content;
+}
+body .main-container .header .profile > samp {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+}
+body .main-container .body-container {
+  display: grid;
+  grid-template-rows: 200px repeat(2, min-content);
+  padding: 20px 40px;
+  gap: 5vh;
+}
+body .main-container .body-container .titles {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .main-container .body-container .titles > div > h2,
+body .main-container .body-container .titles h1 {
+  margin: 0;
+}
+body .main-container .body-container .titles .icon {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+body .main-container .body-container .titles .icon > img {
+  position: absolute;
+}
+body .main-container .body-container .titles .icon .number {
+  font-size: 20px;
+}
+body .main-container .body-container .titles .icon .month {
+  font-size: 10px;
+}
+body .main-container .body-container .titles .texts {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5px;
+}
+body .main-container .body-container .titles .texts .text-orange-title {
+  color: #ee5253;
+  font-size: 14px;
+  font-weight: bold;
+}
+body .main-container .body-container .titles .texts .text-orange-text {
+  font-size: 12px;
+}
+body .main-container .body-container .studens {
+  background-color: white;
+  border-radius: 20px;
+  color: #222f3e;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 25vw;
+}
+body .main-container .body-container .studens .item {
+  display: inline-flex;
+  flex-direction: column;
+  width: min-content;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+body .main-container .body-container .studens .item .numb {
+  font-size: 48px;
+}
+body .main-container .body-container .studens .item .name {
+  font-size: 14px;
+}
+body .main-container .body-container .studens .title {
+  display: flex;
+  border-left: 2px solid #cacaca;
+  justify-content: center;
+  align-items: center;
+}
+body .main-container .body-container .studens .title .name {
+  font-size: 14px;
+}
+body .main-container .body-container .grafic-cards {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 2vw;
+}
+body .main-container .body-container .grafic-cards .grafic {
+  display: grid;
+  gap: 5vh;
+  background: white;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+body .main-container .body-container .grafic-cards .grafic .head {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .main-container .body-container .grafic-cards .grafic .head > h1 {
+  font-size: 1.7rem;
+}
+body .main-container .body-container .grafic-cards .grafic .head .select {
+  border-radius: 10px;
+  border: none;
+  background-color: #f6f7f9;
+  color: #8395a7;
+  text-align: center;
+  height: 50px;
+  width: 200px;
+}
+body .main-container .body-container .grafic-cards .grafic .content {
+  display: inline-flex;
+  justify-content: space-between;
+}
+body .main-container .body-container .grafic-cards .grafic .content .profits {
+  text-align: end;
+}
+body .main-container .body-container .grafic-cards .grafic .content .profits > h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+body .main-container .body-container .grafic-cards .grafic .content .profits > samp {
+  font-size: 14px;
+}
+body .main-container .body-container .grafic-cards .grafic .content .grafic-time {
+  position: relative;
+  width: 75%;
+  height: 80%;
+}
+body .main-container .body-container .grafic-cards .grafic .foot {
+  display: inline-flex;
+  overflow-x: auto;
+  gap: 20px;
+}
+body .main-container .body-container .grafic-cards .grafic .foot .card {
+  width: 500px;
+  border: 2px solid #cacaca;
+  border-radius: 20px;
+  padding: 10px;
+}
+body .main-container .body-container .grafic-cards .grafic .foot .card > samp {
+  color: #2E86DE;
+  font-size: 14px;
+}
+body .main-container .body-container .grafic-cards .grafic .foot .card > h1 {
+  font-size: 32px;
+  margin: 0;
+}
+body .main-container .body-container .grafic-cards .cards {
+  display: grid;
+  gap: 10px;
+}
+body .main-container .body-container .grafic-cards .cards .card {
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 226px;
+}
+body .main-container .body-container .grafic-cards .cards .card > samp {
+  margin-left: 10px;
+  width: 100px;
+  font-size: 16px;
+}
+body .main-container .body-container .how-create .content {
+  display: inline-flex;
+  flex-direction: row;
+}
+body .main-container .body-container .how-create .content .descri {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+body .main-container .body-container .how-create .content .descri > h2 {
+  font-size: 24px;
+}
+body .main-container .body-container .how-create .content .descri > samp {
+  font-size: 14px;
+}
+body .main-container .body-container .how-create .content .descri > input {
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 228px;
+  height: 56px;
+  border: none;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=main.css.map */
